@@ -43,7 +43,7 @@ class BooksSearch extends Books
     public function search($params)
     {
         $query = Books::find();
-        $query->joinWith(['author']);
+        $query->joinWith(['authors']);
 
         // add conditions that should always apply here
 
